@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <dialog class="modal-window" id="modal">
+      <div class="head d-flex align-items-center">
+        <div class="title d-flex align-items-center">
+          <div class="text">Set number of squares</div>
+        </div>
+        <div class="min-max-close d-flex">
+          <button class="gray window-design" type="submit">
+            <img src="img/minimize.png" alt="" srcset="" />
+          </button>
+
+          <button class="gray window-design" type="submit" id="close-modal">
+            <img src="img/close.png" alt="" srcset="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-text d-flex">
+          <div class="text">Please enter a number.</div>
+
+          <div class="modal-buttons d-flex">
+            <button class="btn-w95 p-22" id="modal-ok">OK</button>
+            <button class="btn-w95">Cancel</button>
+          </div>
+        </div>
+
+        <div class="configuration">
+          <div class="label">
+            <label for="">Number of squares in Axis X:</label>
+            <input type="number" id="axis-x" />
+          </div>
+
+          <div class="label">
+            <label for="">Number of squares in Axis Y:</label>
+            <input type="number" id="axis-y" />
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="d-grid">
+      <div class="window">
+        <div class="head d-flex align-items-center">
+          <div class="title d-flex align-items-center">
+            <div class="icon d-flex align-items-center">
+              <img src="img/ms-paint-logo.webp" alt="" srcset="" />
+            </div>
+            <div class="text">untitled - Paint</div>
+          </div>
+          <div class="min-max-close d-flex">
+            <button class="gray window-design" type="submit">
+              <img src="img/minimize.png" alt="" srcset="" />
+            </button>
+
+            <button class="gray window-design" type="submit">
+              <img src="img/maximize.png" alt="" srcset="" />
+            </button>
+
+            <button class="gray window-design" type="submit">
+              <img src="img/close.png" alt="" srcset="" />
+            </button>
+          </div>
+        </div>
+
+        <div class="content d-flex">
+          <div class="options d-flex" id="options"></div>
+
+          <div class="window-content">
+            <div class="window-tools">
+              <div class="group-buttons window-design" id="group-buttons"></div>
+
+              <div class="square">
+                <div class="square-container"></div>
+              </div>
+            </div>
+            <div class="window-background" id="window-background"></div>
+          </div>
+          <div class="colors-menu d-flex">
+            <div class="two-selector">
+              <button class="selector-item" id="one"></button>
+              <button class="selector-item" id="two"></button>
+            </div>
+            <div class="colors-selector" id="colors-selector"></div>
+          </div>
+
+          <div class="help-bar">
+            <div class="help-text">
+              <p class="text">For Help, click Help Topics on the Help Menu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="icons">
+        <button class="desktop-icon" id="open-modal">
+          <img src="img/computer.png" alt="" srcset="" />
+          <p>Configuration</p>
+        </button>
+        <button class="desktop-icon">
+          <img src="img/window.png" alt="" srcset="" />
+          <p>Program</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="task-bar d-flex">
+      <div class="content-left d-flex">
+        <div class="start-btn d-flex window-design">
+          <img src="img/windows-95.png" alt="" srcset="" />
+          <p>Start</p>
+        </div>
+
+        <div class="paint-btn d-flex">
+          <img src="img/ms-paint-logo.webp" alt="" srcset="" />
+          <p>untitled - Paint</p>
+        </div>
+      </div>
+
+      <div class="hour" id="hour"></div>
+    </div>
+  </body>
+</html>
