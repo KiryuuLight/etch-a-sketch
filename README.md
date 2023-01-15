@@ -1,5 +1,5 @@
 # etch-a-sketch
 
-Project based on "ms paint" application of the windows 95 operating system
+Project based on the classic "ms paint" application from the windows 95 operating system
 
 Font used : 'Windows Regular'
