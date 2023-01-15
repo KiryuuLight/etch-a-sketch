@@ -140,15 +140,20 @@ p {
 /* Tools */
 
 .group-buttons {
-  display: flex;
-  flex-wrap: wrap;
-
-  border-right: 2px solid #404040;
-  border-bottom: 2px solid #404040;
+  display: grid;
+  justify-content: center;
 }
 
 .tool-btn {
-  min-width: 38px;
+  max-width: 45px;
+}
+
+@media (min-width: 865px) {
+  .group-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 3px;
+    margin-bottom: 50px;
+  }
 }
 
 .group-buttons button {
@@ -180,9 +185,6 @@ p {
   background-color: #848484;
   max-height: 600px;
   max-width: 780px;
-}
-
-.div-x div {
 }
 
 /* Colors menu */
